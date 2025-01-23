@@ -1,97 +1,113 @@
-/* Estilos Gerais */
+/* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f8fb;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
-/* Header */
-.header {
-    background-color: #0078d4;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+header {
+  background-color: #0077b6;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
 }
 
-/* Container */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
+header h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
-/* Imagem */
-.image-section .main-image {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
+header p {
+  margin: 0.5rem 0 0;
 }
 
-/* Plano de Manutenção */
-.plan-section {
-    background: white;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+main {
+  padding: 1rem;
 }
 
-.plan-section h2 {
-    text-align: center;
-    color: #0078d4;
-    margin-bottom: 20px;
+h2 {
+  color: #0077b6;
 }
 
-.plan-box {
-    border: 1px solid #0078d4;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-    background: #f9f9f9;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
 }
 
-.plan-box h3 {
-    color: #0078d4;
-    margin-bottom: 10px;
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: left;
 }
 
-.plan-box ul {
-    list-style-type: none;
-    padding: 0;
+table th {
+  background-color: #0077b6;
+  color: #fff;
 }
 
-.plan-box ul li {
-    margin-bottom: 8px;
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-.plan-box ul li strong {
-    color: #0078d4;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.note {
-    font-style: italic;
-    color: #555;
+ul li {
+  background: #0077b6;
+  color: #fff;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 
-/* Footer */
-.footer {
-    text-align: center;
-    background: #0078d4;
-    color: white;
-    padding: 10px 0;
-    margin-top: 20px;
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2rem;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .plan-box {
-        padding: 10px;
-    }
-    .plan-box h3 {
-        font-size: 18px;
-    }
-    .plan-box ul li {
-        font-size: 14px;
-    }
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  table th, table td {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  ul li {
+    font-size: 0.8rem;
+  }
 }
