@@ -1,113 +1,150 @@
-/* Estilos gerais */
-body {
-  font-family: Arial, sans-serif;
+/* Resetando margens e padding */
+* {
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* Definindo fonte geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   color: #333;
-  background-color: #f9f9f9;
+  line-height: 1.6;
+  padding: 0 10px;
 }
 
 header {
-  background-color: #0077b6;
-  color: #fff;
+  background-color: #4CAF50;
+  color: white;
   text-align: center;
-  padding: 1.5rem;
+  padding: 20px 0;
 }
 
 header h1 {
-  margin: 0;
   font-size: 2rem;
 }
 
 header p {
-  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
 }
 
 main {
-  padding: 1rem;
+  padding: 20px;
 }
 
 h2 {
-  color: #0077b6;
+  color: #4CAF50;
+  margin-bottom: 20px;
 }
 
+/* Estilizando a tabela */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1rem 0;
+  margin-bottom: 20px;
+  table-layout: fixed;
 }
 
-table th, table td {
-  border: 1px solid #ddd;
-  padding: 0.8rem;
+th, td {
+  padding: 10px;
   text-align: left;
+  border: 1px solid #ddd;
 }
 
-table th {
-  background-color: #0077b6;
-  color: #fff;
+th {
+  background-color: #4CAF50;
+  color: white;
 }
 
-table tr:nth-child(even) {
-  background-color: #f2f2f2;
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Estilos para a lista de dicas */
 ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
 }
 
 ul li {
-  background: #0077b6;
-  color: #fff;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #e7f7e7;
+  border: 1px solid #ddd;
   border-radius: 5px;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
   background-color: #333;
-  color: #fff;
-  margin-top: 2rem;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
 }
 
-/* Responsividade */
+/* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   header p {
     font-size: 1rem;
   }
 
-  table th, table td {
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .schedule, .tips {
+    padding: 10px;
+  }
+
+  table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+
+  th, td {
     font-size: 0.9rem;
-    padding: 0.5rem;
   }
 
   ul li {
     font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 480px) {
   header h1 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
-  header p {
-    font-size: 0.9rem;
+  .schedule, .tips {
+    padding: 5px;
   }
 
   table {
-    font-size: 0.8rem;
+    width: 100%;
+    overflow-x: auto;
   }
 
-  ul li {
+  th, td {
     font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  footer {
+    font-size: 0.7rem;
+    padding: 8px;
   }
 }
