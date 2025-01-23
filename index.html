@@ -1,110 +1,121 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plano de Manutenção da Piscina</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manutenção da Piscina</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Plano de Manutenção da Piscina</h1>
-    </header>
-
-    <main class="container">
-        <!-- Imagem de destaque -->
-        <section class="image-section">
-            <img src="Foto1.png" alt="Piscina cristalina" class="main-image">
-        </section>
-
-        <!-- Plano de Manutenção -->
-        <section class="plan-section">
-            <h2>Manutenção Semanal</h2>
-
-            <div class="plan-box">
-                <h3>Segunda-feira - Manutenção Geral</h3>
-                <ul>
-                    <li><strong>Cloro Granulado:</strong> 1,8 kg</li>
-                    <li><strong>Elevador de pH:</strong> 1,8 kg a 3,6 kg (se necessário)</li>
-                    <li><strong>Elevador de Alcalinidade:</strong> 3,6 kg (se necessário)</li>
-                    <li><strong>Algicida de Manutenção:</strong> 900 ml</li>
-                    <li><strong>Oxidante Genco:</strong> 1,8 kg (trata 180.000 L)</li>
-                </ul>
-            </div>
-
-            <div class="plan-box">
-                <h3>Terça-feira - Controle de Cloro e Aspiração</h3>
-                <ul>
-                    <li><strong>Cloro Granulado:</strong> 1,8 kg</li>
-                    <li><strong>Algicida de Manutenção:</strong> 900 ml</li>
-                    <li><strong>Clarificante:</strong> 3,6 litros (se necessário)</li>
-                    <li>Aspiração do fundo da piscina</li>
-                </ul>
-                <p class="note"><strong>Observação:</strong> Realizar a filtragem da piscina por pelo menos 6 horas após a aspiração.</p>
-            </div>
-
-            <div class="plan-box">
-                <h3>Quarta-feira - Limpeza das Bordas</h3>
-                <ul>
-                    <li>Limpeza das bordas com escova de piscina</li>
-                    <li><strong>Elevador de pH:</strong> 1,8 kg a 3,6 kg (se necessário)</li>
-                </ul>
-                <p class="note"><strong>Observação:</strong> Realizar a filtragem da piscina por pelo menos 6 horas após a aspiração.</p>
-            </div>
-            </div>
-
-            <div class="plan-box">
-                <h3>Quinta-feira - Inspeção do Sistema</h3>
-                <ul>
-                    <li><strong>Clarificante:</strong> 3,6 litros (somente se necessário)</li>
-                    <li>Retrolavagem do filtro</li>
-                    <li><strong>Cloro Granulado:</strong> 1,8 kg</li>
-                </ul>
-                <p class="note"><strong>Observação:</strong> Realizar a filtragem da piscina por pelo menos 6 horas após a aspiração.</p>
-            </div>
-            </div>
-
-            <div class="plan-box">
-                <h3>Sexta-feira - Controle de Cálcio e Algas</h3>
-                <ul>
-                    <li><strong>Algicida de Manutenção:</strong> 900 ml</li>
-                    <li><strong>Elevador de Alcalinidade:</strong> 3,6 kg (se necessário)</li>
-                    <li><strong>Cloro Granulado:</strong> 1,8 kg</li>
-                </ul>
-                <p class="note"><strong>Observação:</strong> Realizar a filtragem da piscina por pelo menos 6 horas após a aspiração.</p>
-            </div>
-            </div>
-
-            <div class="plan-box">
-                <h3>Sábado - Limpeza Profunda</h3>
-                <ul>
-                    <li><strong>Cloro Granulado:</strong> 1,8 kg</li>
-                    <li>Escovação profunda no fundo e paredes</li>
-                    <li>Aspiração para remover detritos</li>
-                </ul>
-                <p class="note"><strong>Observação:</strong> Realizar a filtragem da piscina por pelo menos 6 horas após a aspiração.</p>
-            </div>
-
-            <div class="plan-box">
-                <h3>Domingo - Verificação Geral</h3>
-                <ul>
-                    <li>Meça os níveis de <strong>Cloro (1 a 3 ppm)</strong>, <strong>pH (7,2 a 7,8)</strong>, e <strong>Alcalinidade (80-120 ppm)</strong></li>
-                    <li>Ajuste conforme necessário:
-                        <ul>
-                            <li><strong>Cloro Granulado:</strong> 1,8 kg (se o cloro estiver abaixo de 1 ppm)</li>
-                            <li><strong>Elevador de pH:</strong> 1,8 kg a 3,6 kg (se necessário)</li>
-                            <li><strong>Elevador de Alcalinidade:</strong> 3,6 kg (se necessário)</li>
-                        </ul>
-                        <p class="note"><strong>Observação:</strong> Realizar a filtragem da piscina por pelo menos 6 horas após a aspiração.</p>
-            </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p>© 2025 - Manutenção de Piscinas | Feito com 💧 para você!</p>
-    </footer>
+  <header>
+    <h1>Plano de Manutenção para Piscina</h1>
+    <p>Manutenção semanal para piscina de 180 mil litros de água</p>
+  </header>
+  <main>
+    <section class="schedule">
+      <h2>Programação Semanal</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Dia da Semana</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Atividade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda-feira</td>
+            <td>Cloro Granulado</td>
+            <td>Dosagem regular - 720.00g</td>
+            <td>Esfregação completa das paredes e fundo</td>
+          </tr>
+          <tr>
+            <td>Segunda-feira</td>
+            <td>Oxidante Genco</td>
+            <td>1,8 kg</td>
+            <td>Tratamento completo de oxidação</td>
+          </tr>
+          <tr>
+            <td>Segunda-feira</td>
+            <td>Algicida de Choque</td>
+            <td>1260ml</td>
+            <td>Tratamento contra algas</td>
+          </tr>
+          <tr>
+            <td>Terça-feira</td>
+            <td>Algicida de Manutenção</td>
+            <td>900ml</td>
+            <td>Remoção de folhas e sujeiras da superfície</td>
+          </tr>
+          <tr>
+            <td>Quarta-feira</td>
+            <td>Cloro Granulado</td>
+            <td>Dosagem regular - 720.00g</td>
+            <td>Aspiração completa do fundo</td>
+          </tr>
+          <tr>
+            <td>Quarta-feira</td>
+            <td>Clarificante</td>
+            <td>Prevenção da água turva - 270.00ml</td>
+            <td>Tratamento para clarificação da água</td>
+          </tr>
+          <tr>
+            <td>Quinta-feira</td>
+            <td>Algicida de Manutenção</td>
+            <td>900ml</td>
+            <td>Verificar e ajustar o pH (se necessário)</td>
+          </tr>
+          <tr>
+            <td>Quinta-feira</td>
+            <td>Algicida de Choque</td>
+            <td>1260ml</td>
+            <td>Tratamento contra algas</td>
+          </tr>
+          <tr>
+            <td>Sexta-feira</td>
+            <td>Cloro Granulado</td>
+            <td>Dosagem regular - 720.00g</td>
+            <td>Inspeção geral e remoção de detritos</td>
+          </tr>
+          <tr>
+            <td>Sexta-feira</td>
+            <td>Clarificante</td>
+            <td>Prevenção da água turva - 270.00ml</td>
+            <td>Tratamento para clarificação da água</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>Clarificante</td>
+            <td>Prevenção da água turva - 270.00ml</td>
+            <td>Aspiração leve e remoção de sujeira</td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>Cloro Granulado (caso necessário)</td>
+            <td>Dosagem regular - 720.00g</td>
+            <td>Verificar condições da água após o uso</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="tips">
+      <h2>Dicas Importantes</h2>
+      <ul>
+        <li>Cloro deve ser jogado segunda, quarta e sexta-feira regularmente.</li>
+        <li>Aos finais de semana, aplique cloro apenas se necessário (ex.: maior uso da piscina).</li>
+        <li>Utilize 900 ml de algicida de manutenção duas vezes por semana (terça e quinta).</li>
+        <li>Utilize 1,8 kg de Oxidante Genco toda segunda-feira para um tratamento completo.</li>
+        <li>Utilize 1260 ml de algicida de choque duas vezes por semana (segunda e quinta).</li>
+        <li>Utilize Prevenção da água turva - 270.00ml ml de clarificante duas vezes por semana (quarta e sexta).</li>
+        <li>Verifique o pH ao menos 2 vezes por semana (ideal: 7.2 a 7.6).</li>
+        <li>Esfregue as paredes/bordas e aspire o fundo semanalmente para evitar algas.</li>
+        <li>Retire folhas e sujeiras diariamente para manter a água limpa.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 - Manutenção de Piscinas. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
