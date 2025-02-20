@@ -3,57 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manutenção da Piscina</title>
+  <title>Plano de Manutenção da Piscina</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Plano de Manutenção para Piscina</h1>
-    <p>Manutenção semanal para piscina de 180 mil litros de água</p>
+    <p>Manutenção semanal para piscina de 180 mil litros</p>
   </header>
 
   <main>
     <section class="schedule">
       <h2>Programação Semanal</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Dia da Semana</th>
-            <th>Produto</th>
-            <th>Quantidade</th>
-            <th>Atividade</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Segunda-feira</td><td>Cloro Granulado</td><td>720g</td><td>Esfregação completa das paredes e fundo</td></tr>
-          <tr><td>Segunda-feira</td><td>Oxidante Genco</td><td>1,8 kg</td><td>Tratamento completo de oxidação</td></tr>
-          <tr><td>Segunda-feira</td><td>Algicida de Choque</td><td>1260ml</td><td>Tratamento contra algas</td></tr>
-          <tr><td>Terça-feira</td><td>Algicida de Manutenção</td><td>900ml</td><td>Remoção de folhas e sujeiras da superfície</td></tr>
-          <tr><td>Quarta-feira</td><td>Cloro Granulado</td><td>720g</td><td>Aspiração completa do fundo</td></tr>
-          <tr><td>Quarta-feira</td><td>Clarificante*</td><td>270ml</td><td>Aplicar à noite, se necessário</td></tr>
-          <tr><td>Quinta-feira</td><td>Algicida de Manutenção</td><td>900ml</td><td>Verificar e ajustar o pH (se necessário)</td></tr>
-          <tr><td>Quinta-feira</td><td>Algicida de Choque</td><td>1260ml</td><td>Tratamento contra algas</td></tr>
-          <tr><td>Sexta-feira</td><td>Cloro Granulado</td><td>720g</td><td>Inspeção geral e remoção de detritos</td></tr>
-          <tr><td>Sexta-feira</td><td>Clarificante*</td><td>270ml</td><td>Aplicar à noite, se necessário</td></tr>
-          <tr><td>Sábado</td><td>Limpeza do Filtro</td><td>-</td><td>Retrolavagem e enxágue</td></tr>
-          <tr><td>Domingo</td><td>Cloro Granulado (caso necessário)</td><td>720g</td><td>Verificar condições da água</td></tr>
-        </tbody>
-      </table>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Dia da Semana</th>
+              <th>Produto/Atividade</th>
+              <th>Quantidade</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Segunda-feira -->
+            <tr>
+              <td>Segunda-feira</td>
+              <td>Cloro Granulado</td>
+              <td>720g</td>
+              <td>Aplicar após a esfregaçao da piscina</td>
+            </tr>
+            <tr>
+              <td>Segunda-feira</td>
+              <td>Oxidante Genco</td>
+              <td>1,8 kg</td>
+              <td>Tratamento completo de oxidação.</td>
+            </tr>
+            <tr>
+              <td>Segunda-feira</td>
+              <td>Observação</td>
+              <td>-</td>
+              <td>Aplicar <strong>Algicida de Choque</strong> SOMENTE se houver algas.</td>
+            </tr>
+
+            <!-- Terça-feira -->
+            <tr>
+              <td>Terça-feira</td>
+              <td>Algicida de Manutenção</td>
+              <td>900ml</td>
+              <td>Prevenção de algas (aplicado pela manhã).</td>
+            </tr>
+            <tr>
+              <td>Terça-feira</td>
+              <td>Limpeza do Filtro</td>
+              <td>-</td>
+              <td>Realizar retrolavagem e enxágue do filtro.</td>
+            </tr>
+
+            <!-- Quarta-feira -->
+            <tr>
+              <td>Quarta-feira</td>
+              <td>Cloro Granulado</td>
+              <td>720g</td>
+              <td>Aplicar pela manhã para limpeza (aspiração do fundo).</td>
+            </tr>
+            <tr>
+              <td>Quarta-feira</td>
+              <td>Observação</td>
+              <td>-</td>
+              <td>Se a água estiver turva, aplicar <strong>Clarificante</strong> (270ml) à noite.</td>
+            </tr>
+
+            <!-- Quinta-feira -->
+            <tr>
+              <td>Quinta-feira</td>
+              <td>Algicida de Manutenção</td>
+              <td>900ml</td>
+              <td>Prevenção de algas.</td>
+            </tr>
+            <tr>
+              <td>Quinta-feira</td>
+              <td>Observação</td>
+              <td>-</td>
+              <td>Aplicar <strong>Algicida de Choque</strong> SOMENTE se houver algas.</td>
+            </tr>
+
+            <!-- Sexta-feira -->
+            <tr>
+              <td>Sexta-feira</td>
+              <td>Cloro Granulado</td>
+              <td>720g</td>
+              <td>Aplicar pela manhã para inspeção geral e remoção de detritos.</td>
+            </tr>
+            <tr>
+              <td>Sexta-feira</td>
+              <td>Observação</td>
+              <td>-</td>
+              <td>Se a água estiver turva, aplicar <strong>Clarificante</strong> (270ml) à noite.</td>
+            </tr>
+
+            <!-- Sábado -->
+            <tr>
+              <td>Sábado</td>
+              <td>Limpeza do Filtro</td>
+              <td>-</td>
+              <td>Retrolavagem e enxágue do filtro.</td>
+            </tr>
+
+            <!-- Domingo -->
+            <tr>
+              <td>Domingo</td>
+              <td>Cloro Granulado (se necessário)</td>
+              <td>720g</td>
+              <td>Verificar condições da água e ajustar se necessário.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
-    <section class="filter-cleaning">
-      <h2>Passo a Passo da Limpeza do Filtro</h2>
-      <ol>
-        <li>Desligue a bomba.</li>
-        <li>Coloque a alavanca do filtro em <strong>"RETROLAVAGEM"</strong>.</li>
-        <li>Abra o registro do dreno de esgoto e feche os de aspiração e retorno.</li>
-        <li>Ligue a bomba por 2-3 minutos, até a água sair limpa.</li>
-        <li>Desligue a bomba e feche o dreno de esgoto.</li>
-        <li>Coloque a alavanca do filtro em <strong>"ENXÁGUE"</strong>.</li>
-        <li>Abra o dreno de esgoto e ligue a bomba por 30-60 segundos.</li>
-        <li>Desligue a bomba, feche o dreno e coloque a alavanca em <strong>"FILTRAR"</strong>.</li>
-        <li>Abra os registros de aspiração e retorno e ligue a bomba normalmente.</li>
-      </ol>
+    <section class="tips">
+      <h2>Dicas Importantes</h2>
+      <ul>
+        <li>Cloro deve ser aplicado **segunda, quarta e sexta-feira** pela manhã.</li>
+        <li>Algicida de Manutenção deve ser aplicado **terça e quinta-feira**.</li>
+        <li><strong>Algicida de Choque</strong>: Use SOMENTE se houver algas visíveis.</li>
+        <li>Limpeza do filtro: Realize retrolavagem e enxágue **terça e sábado**.</li>
+        <li><strong>Clarificante:</strong> Aplicar à noite se a água estiver turva (dosagem recomendada: 270ml).</li>
+        <li>Verificar e ajustar o pH 2 vezes por semana (ideal: 7.2 a 7.6).</li>
+      </ul>
     </section>
   </main>
 
