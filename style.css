@@ -5,33 +5,44 @@
   box-sizing: border-box;
 }
 
+/* Estilo geral do corpo */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f2f2f2;
   color: #333;
   text-align: center;
   padding: 20px;
 }
 
+/* Cabeçalho */
 header {
-  background: #0077b6;
+  background-color: #0077cc;
   color: white;
-  padding: 15px;
-}
-
-main {
-  max-width: 900px;
-  margin: 20px auto;
-  background: white;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+header h1 {
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
+/* Conteúdo principal */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos das seções */
+h2 {
+  margin-bottom: 10px;
+  color: #0077cc;
+}
+
+/* Tabela e container para tabela */
 .table-container {
   overflow-x: auto;
   width: 100%;
@@ -41,47 +52,159 @@ h1, h2 {
 table {
   width: 100%;
   border-collapse: collapse;
+  background-color: white;
 }
 
 th, td {
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
 }
 
 th {
-  background: #0096c7;
+  background-color: #0077cc;
   color: white;
 }
 
 td {
-  background: #e9f5ff;
+  background-color: #e9f5ff;
 }
 
-ul, ol {
+/* Seção de passo a passo da limpeza do filtro */
+.filter-cleaning {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.step {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #e9f5ff;
+  border-left: 5px solid #0077cc;
+}
+
+.step img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Container de imagens para o Passo 3 (lado a lado) */
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.image-container img {
+  width: 48%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Seção de dicas importantes */
+.tips {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  text-align: left;
+  border-radius: 8px;
+}
+
+.tips ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.tips ul li {
+  margin-bottom: 8px;
+  padding: 5px;
+  border-left: 4px solid #0077cc;
+}
+
+/* Seção de instruções para filtragem com imagens dos registros */
+.filtration-instructions {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.filtration-instructions ol {
   text-align: left;
   list-style-position: inside;
   padding: 10px;
 }
 
-ul li, ol li {
-  padding: 5px 0;
+.filtration-instructions li {
+  margin-bottom: 15px;
 }
 
+.filtration-instructions img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Rodapé */
 footer {
   margin-top: 20px;
-  background: #0077b6;
+  background-color: #0077cc;
   color: white;
   padding: 10px;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-  table, th, td {
+  th, td {
     font-size: 14px;
+    padding: 8px;
+  }
+  
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step img, .filtration-instructions img {
+    width: 80%;
   }
   
   body {
     padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+  }
+  
+  header p, footer p {
+    font-size: 14px;
+  }
+  
+  th, td {
+    font-size: 12px;
+    padding: 6px;
+  }
+  
+  .tips ul li, .filtration-instructions li {
+    font-size: 12px;
   }
 }
